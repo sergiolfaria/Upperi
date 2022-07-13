@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout-padrao.css">
+    <link rel="stylesheet" href="../css/produto css.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+ 
+
+    
+</head>
+
+<body>
+    <header>
+        <div class="linha barra-menu">
+            <div class="coluna-cel-12 coluna-tab-6">
+                <a href="../">
+                    <img class="logo-img" src="../img/UpPeri.png" alt="Logo da comunidade UpPeri" height="36px">
+                </a>
+
+            </div>
+            <div class="coluna-cel-12 coluna-tab-6">
+                <div class="menu-top">
+                    <ul class="menu-horizontal flutuante-end">
+                        <li class="menu-horizontal-item">
+                            <a class="menu-horizontal-link active" aria-current="page"
+                                href="./produto.html">Produtos</a>
+                        </li>
+                        <li class="menu-horizontal-item">
+                            <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
+                                href="#">Carrinho</a><a>
+                        </li>
+                        <li class="menu-horizontal-item">
+                            <a class="menu-horizontal-link" href="./ajuda.html">Ajuda</a>
+                        </li>
+                        <li class="menu-horizontal-item">
+                            <a class="menu-horizontal-link" href="../auth/login.html">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="linha">
+            <div class="coluna-cel-12 coluna-tab-3">
+              <div class="flutuante-start">
+                  
+              </div>  
+            </div>
+        </div>
+        <div class="linha">
+            <div class="coluna-cel-12 coluna-tab-3">
+
+                <div class="card flutuante-center">
+                    <div class="img">
+                        <img src="../img/marketing.png" width="250px">
+                    </div>
+                    <h3 class="aling">Crédito pessoal</h3>
+
+                    <div class="conteudo">
+                        <p class="alinhamento">
+                            Com a portabilidade de crédito, você, cliente de outro banco, pode trazer seu consignado com
+                            as melhores taxas e condições. Após a transferência do empréstimo, seu saldo devedor é
+                            quitado junto ao banco de origem e o seu contrato passa a vigorar com a gente tornando suas financias melhores.
+                        </p>
+
+                        <a class="carrinho" onclick ="ItemCarrinho1()"href="#1">Adicione⭕</a>
+                        <a class="#" onclick ="click_do_carrinho_remover_p1()" href="#">Remova❌</a>
+                        <a href="#">Preço e quantia :</a>
+                        <input id="carrinho_p1" class ="Leia " class =" precototal" type="number" readonly onclick="click_do_readonly()"value="0"><br>
+                        <input class ="Leia2 " id="qtd1" readonly onclick="click_do_readonly()" type="number" value="0"><br>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="coluna-cel-12 coluna-tab-3">
+
+                <div class="card flutuante-center">
+                    <div class="img">
+                        <img src="../img/rico.png" width="250px">
+                    </div>
+                    <h3>Controle e orientação financeira</h3>
+                    <div class="conteudo">
+                        <p class="alinhamento">
+                                O UpPeri Financeiro tem tudo para você fazer a gestão financeira eficiente das contas da sua empresa, como: gráficos, 
+                             sistema bancario e uma ótima equipe de atendentes, tudo que é de melhor para seu negócio prosperar.
+                        </p>
+                        <a class="carrinho "  onclick ="ItemCarrinho2()"href="#2">Adicione⭕</a>
+                        <a class="#" onclick ="click_do_carrinho_remover_p2()" href="#">Remova❌</a>
+                        <a href="#">Preço e quantia :</a>
+                        <input id="carrinho_p2" class ="Leia " class =" precototal" type="number" readonly onclick="click_do_readonly()"value="0"><br>
+                        <input class ="Leia2 " id="qtd2" readonly onclick="click_do_readonly()" type="number" value="0"><br>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="coluna-cel-12 coluna-tab-3">
+
+                <div class="card flutuante-center">
+                    <div class="img">
+                        <img src="../img/avançado.png" width="250px">
+                    </div>
+                    <h3>Controle e orientação financeira avançado</h3>
+                    <div class="conteudo">
+                        <p class="alinhamento">
+                            O UpPeri Financeiro avançado tem tudo para você fazer a gestão financeira eficiente das contas da sua empresa e te da prioridade nos 
+                            antendimentos on-line e presenciais de nossa equipe e também inclui o pacote  de crédito pessoal.
+                        </p>
+                        <a class="carrinho " onclick ="ItemCarrinho3()"href="#3">Adicione⭕</a>
+                        <a class="#" onclick ="click_do_carrinho_remover_p3()" href="#">Remova❌</a>
+                        <a href="#">Preço e quantia :</a>
+                        <input id="carrinho_p3" class ="Leia " class =" precototal" type="number" readonly onclick="click_do_readonly()"value="0"><br>                        
+                        <input class ="Leia2 " id="qtd3" readonly onclick="click_do_readonly()" type="number" value="0"><br>
+                    </div>
+                </div>
+
+            </div>
+            <div class="coluna-cel-12 coluna-tab-3">
+
+                <div class="card flutuante-center">
+                    <div class="img">
+                        <img src="../img/pagamento-online.png" width="250px">
+                    </div>
+                    <h3>Controle e orientação financeira Prime</h3>
+                    <div class="conteudo">
+                        <p class="alinhamento">
+                            Este plano conta com todos beneficios do "UpPeri Financeiro avançado" e ainda te abre as portas 
+                            para o mundo digital disponibilizando programadores e servidores para montar o melhor atendimento virtual possivel para seu negócio bombar.
+                        </p>
+                        <a class="carrinho " onclick ="ItemCarrinho4()"href="#4">Adicione⭕</a>
+                        <a class="carrinho" onclick ="click_do_carrinho_remover_p4()" href="#">Remova❌</a>
+                        <a href="#">Preço e quantia :</a>
+                        <input id="carrinho_p4" class ="Leia" class =" precototal" type="number" readonly onclick="click_do_readonly()"value="0">
+                        <input class ="Leia2 " id="qtd4" readonly onclick="click_do_readonly()" type="number" value="0">
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="carrinho_js"class="cardfixado">
+            <div  class="imagem-card">
+                
+                    <a onclick="toggle_carrinho()"class="menu-horizontal-link active alinhamento_card aleat" aria-current="page"
+                        href="#">Feche❌</a>
+               
+                <img class="margem"src="../img/comercio-eletronico.png" alt="Foto card" width="100px">
+                <ul class="alinhamento_card" id="carrinhocompra1"> </ul>
+                <ul class="alinhamento_card" id="carrinhocompra2"> </ul>
+                <ul class="alinhamento_card" id="carrinhocompra3"> </ul>
+                <ul class="alinhamento_card" id="carrinhocompra4"> </ul>
+                <ul class="alinhamento_card" id="Total"> </ul>
+    
+                <a class="MsgPedido botao botao-primario botao-end  botao-largo botão_distanciado" onclick="Finalizar_carrinho()" href="#4">Finalizar Pedido </a>
+                <a class="MsgPedido botao botao-primario botao-end  botao-largo botão_distanciado" onclick="Reinicio_carrinho()" href="#4">Reiniciar Pedido </a>
+                
+                
+               
+            </div>    
+        </div>    
+        
+    </main>
+    <footer style="margin-top: 40vh;"class="linha">
+        <div class="coluna-cel-12 coluna-pc-6">
+            <div class="menu-top">
+                <ul class="menu-top flutuante-end">
+                    <li class="menu-horizontal-item">
+                        <a class="menu-horizontal-link active" aria-current="page"
+                        target="_blank" href="http://www.instagram.com"><img class="img-tamanho" src="../img/instagram.png"></a>
+                    </li>
+                    <li class="menu-horizontal-item">
+                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
+                        target="_blank"><img class="img-tamanho" src="../img/facebook.png"></a>
+                    </li>
+                    <li class="menu-horizontal-item">
+                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
+                        target="_blank"><img class="img-tamanho" src="../img/twitter.png"></a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="coluna-cel-12 coluna-pc-5">
+            <div class="menu-top">
+                <ul class="menu-top flutuante-start">
+                    <li class="menu-horizontal-item">
+                        <a class="menu-horizontal-link active" aria-current="page"
+                        target="_blank" href="http://www.instagram.com"><img class="img-tamanho2" src="../img/Instagram_logo.png"></a>
+                    </li>
+                    <li class="menu-horizontal-item">
+                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
+                        target="_blank"><img class="img-tamanho2" src="../img/facebook-logo-2-2.png"></a>
+                    </li>
+                    <li class="menu-horizontal-item">
+                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
+                        target="_blank"><img class="img-tamanho3" src="../img/twitter-logo-2.png"></a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+   </footer>
+    <script src ="../script/produto_js.js"></script>
+</body>
+
+</html>

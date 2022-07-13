@@ -1,0 +1,176 @@
+/* config gerais do index.html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+body {
+    background-color: #fd9150;
+    background-size: cover;
+}
+
+/* cabeçalho geral*/
+.barra-menu {
+    background-color: #1d0b00;
+}
+
+.barra-menu .logo-img {
+    margin: 5px;
+    align-items: center;
+}
+
+.menu-top {
+    margin-top: 8px;
+}
+
+/* corpo do site*/
+.titulo-primario {
+    color: #7ed957;
+    font-style: oblique;
+    font-size: 40px;
+    text-align: left;
+    display: flex;
+    word-break: break-word;
+    padding-top: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.subtitulo-primario {
+    font-style: oblique;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 5%;
+}
+
+.titulo-secundario {
+    color: #7ed957;
+    font-style: oblique;
+    font-size: 40px;
+    text-align: left;
+    display: flex;
+    word-break: break-word;
+    padding-left: 3%;
+    padding-right: 5%;
+
+}
+
+.subtitulo-secundario {
+    font-style: oblique;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 5%;
+
+}
+
+.conteudo-primario-imagen {
+    margin-top: 20px;
+    padding: 10px
+}
+
+a:link {
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+/* footer responsivo*/
+.img-tamanho {
+    width: 58px;
+    align-items: center;
+}
+.img-tamanho2{
+    margin-top: 10px;
+    margin-bottom: 19px;
+    width: 100px;
+}
+.img-tamanho3{
+    margin-top: 20px;
+    width: 100px;
+}
+
+@media (min-width: 576px) {
+    .img-tamanho {
+        width: 58px;
+        align-items: center;
+    }
+
+    .footer {
+        margin-top: 90%;
+        margin-right: 40%;
+
+
+    }
+}
+
+.botao-center {
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+@media (min-width: 576px) {
+    .botao-center {
+        margin-right: auto;
+        margin-left: 304px;
+    }
+}
+
+.cardfixado {
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(16, 0, 0);
+    text-align: center;
+    position: fixed;
+    padding: auto;
+    margin-left: 80%;
+    margin-right: auto;
+    top: 60px;
+    background-color: #fd9250;
+    border: 2px solid rgb(0, 0, 0);
+   
+
+
+}
+
+.imagem-carddd {
+    width: calc(100vw - 10px);
+    
+}
+
+#carrinhocompra {
+    list-style: none;
+}
+.alinhamento_card{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-weight:bold;
+    font-size: 80%;
+    color: black;
+   
+}
+
+.botão_distanciado{
+    margin: 10px;
+    
+
+}
+.display_none{
+    display: none;
+    
+}
+ul{
+    list-style: none;
+}
+.margem{
+ margin-top: 10px;
+}
+.aleat:hover{
+    color:red;
+}

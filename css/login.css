@@ -1,0 +1,156 @@
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: gray;
+    border: none;
+}
+
+body {
+    background-color: #fd9150;
+    background-size: cover;
+}
+/* cabeçalho geral*/
+.barra-menu {
+    background-color: #1d0b00;
+}
+
+.barra-menu .logo-img {
+    margin: 5px;
+    align-items: center;
+}
+
+.menu-top {
+    margin-top: 8px;
+}
+
+textarea:focus,input:focus {
+    outline: none;
+}
+
+.fonte {
+    font-size: 200%;
+}
+
+a {
+    font-size: .8rem;
+    /* 16 * .8 = x*/
+
+}
+
+a:hover {
+    color: #fd9150;
+}
+
+/* parte externa do login */
+
+
+.login-container {
+    background-color: #fff;
+    width: calc(100vw - 10px);
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 15px;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .login-container {
+
+        width: 400px;
+
+    }
+
+}
+
+h1 {
+    color: #fd9150;
+}
+
+/* formulario */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label,
+input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-bottom: 2px solid #fd9150;
+    transition: 1s;
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #fd9150;
+    cursor: pointer;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #323232;
+    transition: .5s;
+}
+
+/* encaminhar para registro*/
+#register-container p {
+    margin-bottom: 10px;
+}
+
+
+
+
+a:link {
+    font-weight: bold;
+    border-top-color: black;
+    text-decoration: none;
+    
+    border-radius: 10%;
+}
+
+a:hover {
+    color: #fd9150;
+    text-decoration: none;
+
+
+}
+
+a:link {
+    font-weight: bold;
+    font-size: 100%;
+}
