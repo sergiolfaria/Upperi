@@ -8,6 +8,9 @@
     border: none;
 }
 
+.logo-img{
+    width: 200px !important;
+}
 body {
     background-color: #fd9150;
     background-size: cover;

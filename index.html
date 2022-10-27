@@ -8,36 +8,78 @@
     produtos são (i) a distribuição rápida de itens pequenos via motoboys/ciclistas e (ii)
     a distribuição rápida de móveis ou itens de grande tamanho.">
     <title>UpPeri</title>
+    <!-- CSS only -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/layout-padrao.css">
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
+
 
 
 <body>
     <header>
-        <div class="linha barra-menu">
-            <div class="coluna-cel-12 coluna-tab-6">
-                <a href="./">
-                    <img class="logo-img" src="./img/UpPeri.png" alt="Logo da comunidade UpPeri" height="36px">
+        <nav class="navbar navbar-expand-lg barra-menu py-3 w-80 ">
+            <div class="container">
+
+                <a class="navbar-brand logo-img" href="index.html"><img src="img/UpPeri.png" alt="" style="width: 200px;"></a>
+
+                <a class="navbar-toggler" href="javascript:;" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-solid fa-bars"></i>
                 </a>
-            </div>
-            <div class="coluna-cel-12 coluna-tab-6">
-                <div class="menu-top">
-                    <ul class="menu-horizontal flutuante-end">
-                        <li class="menu-horizontal-item">
-                            <a class="menu-horizontal-link active" aria-current="page"
-                                href="./pages/produto.html">Produtos</a>
-                        </li>
-                        <li class="menu-horizontal-item">
-                            <a class="menu-horizontal-link" href="./pages/ajuda.html">Ajuda</a>
-                        </li>
-                        <li class="menu-horizontal-item">
-                            <a class="menu-horizontal-link" href="./auth/login.html">Entrar</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand" href="#"><img
+                                    src="img/logo.png" alt=""></a></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="d-block d-md-none  bd"></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Produtos
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="pages/produto.html">primeiro</a></li>
+                                    <li><a class="dropdown-item" href="pages/produto.html">segundo </a></li>
+                                    <li><a class="dropdown-item" href="pages/produto.html">terceiro</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Ajuda
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pages/ajuda.html">primeiro</a></li>
+                                    <li><a class="dropdown-item" href="pages/ajuda.html">segundo </a></li>
+                                    <li><a class="dropdown-item" href="pages/ajuda.html">terceiro</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Entrar
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="auth/cadastro.html">Cadastro</a></li>
+                                    <li><a class="dropdown-item" href="auth/login.html">Login </a></li>
+                                    <li><a class="dropdown-item" href="auth/esqueceu_senha.html">Recuperação</a></li>
+                                </ul>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -84,50 +126,51 @@
         </div>
 
     </main>
-    <footer style="margin-top: 40vh;"class="linha">
-       <div class="coluna-cel-12 coluna-pc-6">
+    <footer style="margin-top: 40vh;" class="linha">
+        <div class="coluna-cel-12 coluna-pc-6">
             <div class="menu-top">
                 <ul class="menu-top flutuante-end">
                     <li class="menu-horizontal-item">
-                        <a class="menu-horizontal-link active" aria-current="page"
-                        target="_blank" href="http://www.instagram.com"><img class="img-tamanho" src="../img/instagram.png"></a>
+                        <a class="menu-horizontal-link active" aria-current="page" target="_blank"
+                            href="http://www.instagram.com"><img class="img-tamanho" src="../img/instagram.png"></a>
                     </li>
                     <li class="menu-horizontal-item">
-                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
-                        target="_blank"><img class="img-tamanho" src="../img/facebook.png"></a>
+                        <a onclick="toggle_carrinho()" class="menu-horizontal-link active" aria-current="page"
+                            target="_blank"><img class="img-tamanho" src="../img/facebook.png"></a>
                     </li>
                     <li class="menu-horizontal-item">
-                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
-                        target="_blank"><img class="img-tamanho" src="../img/twitter.png"></a>
+                        <a onclick="toggle_carrinho()" class="menu-horizontal-link active" aria-current="page"
+                            target="_blank"><img class="img-tamanho" src="../img/twitter.png"></a>
                     </li>
-                    
-                    
+
+
                 </ul>
             </div>
         </div>
-    </div>
+        </div>
         <div class="coluna-cel-12 coluna-pc-5">
             <div class="menu-top">
                 <ul class="menu-top flutuante-start">
                     <li class="menu-horizontal-item">
-                        <a class="menu-horizontal-link active" aria-current="page"
-                        target="_blank" href="http://www.instagram.com"><img class="img-tamanho2" src="../img/Instagram_logo.png"></a>
+                        <a class="menu-horizontal-link active" aria-current="page" target="_blank"
+                            href="http://www.instagram.com"><img class="img-tamanho2"
+                                src="../img/Instagram_logo.png"></a>
                     </li>
                     <li class="menu-horizontal-item">
-                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
-                        target="_blank"><img class="img-tamanho2" src="../img/facebook-logo-2-2.png"></a>
+                        <a onclick="toggle_carrinho()" class="menu-horizontal-link active" aria-current="page"
+                            target="_blank"><img class="img-tamanho2" src="../img/facebook-logo-2-2.png"></a>
                     </li>
                     <li class="menu-horizontal-item">
-                        <a onclick="toggle_carrinho()"class="menu-horizontal-link active" aria-current="page"
-                        target="_blank"><img class="img-tamanho3" src="../img/twitter-logo-2.png"></a>
+                        <a onclick="toggle_carrinho()" class="menu-horizontal-link active" aria-current="page"
+                            target="_blank"><img class="img-tamanho3" src="../img/twitter-logo-2.png"></a>
                     </li>
-                    
-                    
+
+
                 </ul>
             </div>
         </div>
-    </div>
-   </footer>
+        </div>
+    </footer>
 </body>
 
 </html>

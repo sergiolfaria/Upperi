@@ -5,7 +5,9 @@
     font-family: Helvetica;
     /*Definição padrão e fonte do site*/
 }
-
+.logo-img{
+    width: 200px ;
+}
 body {
     min-height: calc(100vh - 39px);
     background-color: #fd9150;
@@ -98,8 +100,8 @@ Foram utilizados para dar animação as letras presentes no card*/
 
 
 .card:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: #000000 !important;
+    
     margin-top: 159px;
     box-shadow: 2px 10px 25px #92491c;
     border-color: #a85b2b;
@@ -110,9 +112,12 @@ Foram utilizados para dar animação as letras presentes no card*/
     color: green;
 }
 
-.card:hover .conteudo a {
-   
+.card:hover .conteudo a  {
+    
     background-color: white;
+}
+.card:hover h3{
+    color: green;
 }
 
 a:link {

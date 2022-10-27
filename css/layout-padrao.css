@@ -1,4 +1,17 @@
 /* Linhas */
+.logo-img{
+    width: 200px !important;
+}
+.nav-link{
+    color: #fd9150 !important;
+}
+.dropdown-menu{
+    background-color: #fd9150 !important;
+    border-color: #212529;
+}
+.dropdown-menu :hover{
+    background-color: #ffa66f;
+}
 .linha {
     --mg-scroll-x: 0;
     --mg-scroll-y: 0;
